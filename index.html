@@ -9,10 +9,29 @@
 <body>
     <div class="container">
         <h1>Counter App</h1>
+        
+        <div id="loading" class="loading hidden">Loading...</div>
+        
         <div class="counter-display">
             <span id="counter">0</span>
         </div>
+        
+        <div class="step-control">
+            <label for="stepSize">Step Size:</label>
+            <select id="stepSize" class="step-select">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        
+        <div class="button-container">
+            <button id="decrement" class="btn">-</button>
+            <button id="increment" class="btn">+</button>
+            <button id="reset" class="btn reset-btn">Reset</button>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
