@@ -3,44 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counting App</title>
+    <title>Counter App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Counting App</h1>
-        
-        <!-- Counter display -->
-        <div class="counter-container">
-            <div class="counter" id="counterValue">0</div>
-            <div class="counter-label">Current Count</div>
+        <h1>Counter App</h1>
+        <div class="counter-display">
+            <span id="counter">0</span>
         </div>
-        
-        <!-- Button container with working increment button -->
-        <div class="buttons">
-            <button class="btn btn-primary" id="incrementBtn">
-                <span class="btn-icon">➕</span>
-                <span class="btn-text">Increment</span>
-            </button>
-            
-            <div class="button-placeholder">
-                <div class="placeholder-icon">➖</div>
-                <p>Decrement</p>
-                <small>Coming soon</small>
-            </div>
-            
-            <div class="button-placeholder">
-                <div class="placeholder-icon">🔄</div>
-                <p>Reset</p>
-                <small>Coming soon</small>
-            </div>
-        </div>
-        
-        <footer>
-            <p>Version 1.0</p>
-        </footer>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
