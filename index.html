@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App</title>
+    <title>Simple Counter App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Counter App</h1>
+        <h1>My Counter</h1>
         
-        <div id="loading" class="loading hidden">Loading...</div>
-        
+        <!-- Counter display -->
         <div class="counter-display">
-            <span id="counter">0</span>
+            <span id="counterValue">0</span>
         </div>
         
+        <!-- Step size selector -->
         <div class="step-control">
             <label for="stepSize">Step Size:</label>
-            <select id="stepSize" class="step-select">
-                <option value="1">1</option>
+            <select id="stepSizeSelect">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
                 <option value="5">5</option>
                 <option value="10">10</option>
+                <option value="custom">Custom</option>
             </select>
+            <input type="number" id="customStep" min="1" value="1" step="1" style="display: none;">
         </div>
         
-        <div class="button-container">
-            <button id="decrement" class="btn">-</button>
-            <button id="increment" class="btn">+</button>
-            <button id="reset" class="btn reset-btn">Reset</button>
+        <!-- Control buttons -->
+        <div class="buttons">
+            <button id="decrementBtn">-</button>
+            <button id="incrementBtn">+</button>
+            <button id="resetBtn">Reset</button>
         </div>
     </div>
     
